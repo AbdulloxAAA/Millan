@@ -34,14 +34,17 @@ body.dark {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
 .logo-rasim {
   display: none;
 }
+
 .nav {
   display: flex;
   gap: 100px;
   align-items: center;
 }
+
 .nav ul {
   list-style: none;
   display: flex;
@@ -147,9 +150,11 @@ body.dark .cart-box {
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translateY(7px);
 }
+
 .hamburger.active span:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translateY(-7px);
 }
@@ -179,111 +184,116 @@ body.dark .cart-box {
   .nav.active {
     max-height: 200px;
   }
-
   .nav ul {
     flex-direction: column;
     align-items: center;
     gap: 15px;
     padding: 10px 0;
   }
-
   .hamburger {
     display: flex;
   }
-
   /* Mobil ekranda login/register tugmalari yashiriladi */
   .login-btn,
   .register-btn {
     display: none;
   }
 }
-
-//aaaaaaa
-$yellow: #f9b800;
-$black: #000;
-$white: #fff;
-
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: $yellow;
+  background: #f9b800;
   min-height: 100vh;
   overflow: hidden;
+}
+.hero__content {
+  flex: 1;
+  padding: 4rem;
+  color: #fff;
+  max-width: 600px;
+  background-color: #000;
+}
+.hero__content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  width: 525px;
+}
+.hero__content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+.hero__content .hero__link {
+  color: #f9b800;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+.hero__content .hero__link:hover {
+  border-color: #f9b800;
+}
+.hero__image {
+  flex: 1;
+  width: 100%;
+  height: 349px;
+  text-align: center;
+  background-color: #000;
+  position: relative;
+}
+.hero__image img {
+  width: 512px;
+  position: absolute;
+  height: 788px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  justify-content: center;
+  margin-left: 150px;
+  margin-top: -150px;
+}
 
-  &__content {
-    flex: 1;
-    padding: 4rem;
-    color: $white;
-    max-width: 600px;
-    background-color: $black;
-    h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 0.95rem;
-      line-height: 1.5;
-      color: #ccc;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero__link {
-      color: $yellow;
-      font-weight: 700;
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: 0.3s;
-
-      &:hover {
-        border-color: $yellow;
-      }
-    }
-  }
-
-  &__image {
-    flex: 1;
-    height: 349px;
-    text-align: center;
-    background-color: $black;
-    position: relative;
-    img {
-      width: 200%;
-      position: absolute;
-      height: 200%;
-      object-fit: cover;
-      margin-left: -500px;
-    }
-  }
+.abdu {
+  width: 400px;
 }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    background: $white;
-
-    &__image {
-      order: -1;
-      img {
-        width: 100%;
-      }
-    }
-
-    &__content {
-      color: $black;
-      padding: 2rem;
-
-      p {
-        color: #444;
-      }
-
-      .hero__link {
-        color: $black;
-        font-weight: 700;
-      }
-    }
+@media (max-width: 1100px) {
+  .hero_image {
+    order: -1;
+    background-color: blue;
+    padding-top: 200px;
+  }
+  .hero_image img {
+    width: 100%;
+    margin-top: 100px;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    background: #fff;
+  }
+  .hero_image {
+    background-color: #f9b800;
+    height: 349px;
+  }
+  .hero__content {
+    color: #000;
+    padding: 2rem;
+    background-color: white;
+    margin-top: 800px;
+  }
+  .hero__content p {
+    color: #444;
+  }
+  .hero__content .hero__link {
+    color: #000;
+    font-weight: 700;
+  }
+}/*# sourceMappingURL=header.css.map */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Milandi Figma</title>
-    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
     <header class="header">
@@ -27,11 +27,16 @@
       <div class="actions">
         <button class="dark-btn" id="darkBtn">🌙</button>
 
+        <!-- KORZINA QISMI -->
         <div class="cart" id="cart">
-          <button class="cart-btn" id="cartBtn">🛒</button>
+          <button class="cart-btn" id="cartBtn">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
           <div class="cart-box" id="cartBox">
             <h3>Savatcha</h3>
-            <p>Hozircha bo‘sh.</p>
+            <p id="emptyMsg">Hozircha bo‘sh.</p>
+            <div id="cartItems"></div>
           </div>
         </div>
       </div>
@@ -43,19 +48,116 @@
       </button>
     </header>
     <main>
-      <section class="hero">
-        <div class="hero__content">
-          <h1>Быстрый и удобный шоппинг,<br />не выходя из дома.</h1>
-          <p>
+      <section class="banner">
+        <div class="banner__content">
+          <h1 class="banner__title">
+            Быстрый и удобный шоппинг,<br />
+            не выходя из дома.
+          </h1>
+          <p class="banner__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
             lectus odio vitae, duis nec ut velit, fermentum. Diam sollicitudin
-            arcu euismod morbi. Adipiscing bibendum elementum, fermentum amet
-            quis erat.
+            arcu euismod morbi.
           </p>
-          <a href="#" class="hero__link">ВСЕ ТОВАРЫ</a>
+          <a href="#" class="banner__link">Все товары</a>
         </div>
-        <div class="hero__image">
-          <img src="./images/home/ahmoq qiz.png" alt="model" />
+
+        <div class="banner__image">
+          <img src="../images/home/ahmoq qiz 2.png" alt="Shopping Woman" />
+        </div>
+      </section>
+      <section class="abdu">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi illum
+        ea totam. Doloremque perspiciatis dignissimos mollitia? Magnam iusto cum
+        veniam harum officia! Commodi eaque similique fugiat debitis. Dolores
+        ipsum numquam voluptates nihil soluta labore qui aut. Ex, debitis nobis.
+        Quae vitae similique cum iure dicta enim perferendis sapiente, illo
+        soluta porro nesciunt a fuga minus nostrum animi. Iusto, nulla rerum
+        natus, sunt totam consequuntur consequatur, quibusdam quasi cum eaque
+        aliquam sint aperiam ducimus impedit aut ut nisi quaerat vero autem.
+        Expedita quibusdam aliquid non itaque? Ut corporis dolore molestiae
+        placeat, nam aut doloribus tempore voluptatum dolorem aliquam!
+        Repellendus, inventore reprehenderit.
+      </section>
+      <section class="products-section">
+        <div class="carousel-container">
+          <button class="slide-btn prev" id="prevBtn">←</button>
+
+          <div class="products-wrapper">
+            <div class="products-container" id="products">
+              <div class="product-card">
+                <img src="../images/tovar/tovar 1.png" alt="Tovar 1" />
+                <div class="content">
+                  <h3>Lorem ipsum dolor sit amet</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    sed odio sed nascetur.
+                  </p>
+                  <div class="rating">★★★★★</div>
+                  <div class="price">850 X.Е.</div>
+                  <button class="add-btn">Добавить в корзину</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <img src="../images/tovar/tovar 2.png" alt="Tovar 2" />
+                <div class="content">
+                  <h3>Lorem ipsum dolor sit amet</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    sed odio sed nascetur.
+                  </p>
+                  <div class="rating">★★★★☆</div>
+                  <div class="price">920 X.Е.</div>
+                  <button class="add-btn">Добавить в корзину</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <img src="../images/tovar/tovar 3.png" alt="Tovar 3" />
+                <div class="content">
+                  <h3>Lorem ipsum dolor sit amet</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    sed odio sed nascetur.
+                  </p>
+                  <div class="rating">★★★★★</div>
+                  <div class="price">780 X.Е.</div>
+                  <button class="add-btn">Добавить в корзину</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <img src="../images/tovar/tovar 4.png" alt="Tovar 4" />
+                <div class="content">
+                  <h3>Lorem ipsum dolor sit amet</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    sed odio sed nascetur.
+                  </p>
+                  <div class="rating">★★★★☆</div>
+                  <div class="price">640 X.Е.</div>
+                  <button class="add-btn">Добавить в корзину</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <img src="../images/tovar/tovar 1.png" alt="Tovar 5" />
+                <div class="content">
+                  <h3>Lorem ipsum dolor sit amet</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    sed odio sed nascetur.
+                  </p>
+                  <div class="rating">★★★★★</div>
+                  <div class="price">999 X.Е.</div>
+                  <button class="add-btn">Добавить в корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="slide-btn next" id="nextBtn">→</button>
         </div>
       </section>
     </main>

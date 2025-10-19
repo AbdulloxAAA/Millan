@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 2px solid #eee;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  &__top {
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    text-align: right;
+    padding: 5px 20px;
+
+    .lang span {
+      margin-left: 10px;
+      cursor: pointer;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .nav ul {
+    display: flex;
+    gap: 20px;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: #000;
+        font-size: 0.95rem;
+        position: relative;
+
+        &:hover {
+          color: #f0a500;
+        }
+      }
+    }
+  }
+
+  .header__buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .btn {
+      border: none;
+      cursor: pointer;
+      padding: 8px 14px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+
+      &.login {
+        background: #eee;
+      }
+
+      &.register {
+        background: #f0a500;
+        color: #fff;
+      }
+    }
+
+    .cart {
+      font-size: 1.3rem;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.categories {
+  text-align: center;
+  padding: 40px 0;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+  }
+
+  .card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header__main {
+    flex-direction: column;
+    gap: 10px;
+
+    .nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .header__buttons {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .categories .grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .header__top {
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+
+  .categories h2 {
+    font-size: 1.4rem;
+  }
+}
+
+.footer {
+  background: #fff;
+  padding: 60px 0;
+  border-top: 1px solid #eee;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color: #444;
+  }
+
+  img {
+    width: 80px;
+    margin-top: 15px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 8px;
+
+      a {
+        text-decoration: none;
+        color: #222;
+        font-size: 0.9rem;
+
+        &:hover {
+          color: #f0a500;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__content {
+      gap: 30px;
+    }
+
+    h3 {
+      font-size: 0.95rem;
+    }
+
+    p,
+    a {
+      font-size: 0.85rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px 0;
+
+    &__content {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    img {
+      margin: 10px auto 0;
+    }
+  }
+}
