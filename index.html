@@ -4,28 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Milandi Figma</title>
-    <link rel="stylesheet" href="../scss/main.css" />
-    <link rel="stylesheet" href="../scss/main.scss" />
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
-    <header>
-      <button
-        class="hamburger"
-        aria-controls="menu"
-        aria-expanded="false"
-        aria-label="Menyuni ochish"
-      >
-        <img src="./images/header/meu a.svg" alt="" />
-      </button>
+    <header class="header">
+      <div class="logo">MILANDI</div>
+      <img class="logo-rasim" src="./images/header/Logo.png" alt="" />
 
-      <nav id="menu" class="menu" aria-hidden="true">
-        <a href="#">Bosh sahifa</a>
-        <a href="#">Biz haqimizda</a>
-        <a href="#">Xizmatlar</a>
-        <a href="#">Aloqa</a>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#">Bosh sahifa</a></li>
+          <li><a href="#">Biz haqimizda</a></li>
+          <li><a href="#">Kategoriyalar</a></li>
+          <li><a href="#">Aloqa</a></li>
+        </ul>
+        <div class="registr">
+          <button class="login-btn">Войти</button>
+          <button class="register-btn">Зарегистрироваться</button>
+        </div>
       </nav>
-    </header>
 
+      <div class="actions">
+        <button class="dark-btn" id="darkBtn">🌙</button>
+
+        <div class="cart" id="cart">
+          <button class="cart-btn" id="cartBtn">🛒</button>
+          <div class="cart-box" id="cartBox">
+            <h3>Savatcha</h3>
+            <p>Hozircha bo‘sh.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <h1>Быстрый и удобный шоппинг,<br />не выходя из дома.</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
+            lectus odio vitae, duis nec ut velit, fermentum. Diam sollicitudin
+            arcu euismod morbi. Adipiscing bibendum elementum, fermentum amet
+            quis erat.
+          </p>
+          <a href="#" class="hero__link">ВСЕ ТОВАРЫ</a>
+        </div>
+        <div class="hero__image">
+          <img src="./images/home/ahmoq qiz.png" alt="model" />
+        </div>
+      </section>
+    </main>
     <script src="./js/main.js"></script>
   </body>
 </html>

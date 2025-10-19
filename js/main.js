@@ -1,14 +1,21 @@
-const btn = document.querySelector(".hamburger");
-const menu = document.getElementById("menu");
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("nav");
+const darkBtn = document.getElementById("darkBtn");
+const cartBtn = document.getElementById("cartBtn");
+const cart = document.getElementById("cart");
 
-btn.addEventListener("click", () => {
-  const expanded = btn.getAttribute("aria-expanded") === "true";
+// Hamburger ishlashi
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  nav.classList.toggle("active");
+});
 
-  // holatni almashtirish
-  btn.setAttribute("aria-expanded", !expanded);
-  menu.setAttribute("aria-hidden", expanded);
+// Dark mode
+darkBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
 
-  // classlarni almashtirish
-  btn.classList.toggle("active");
-  menu.classList.toggle("open");
+// Savatcha ochilishi
+cartBtn.addEventListener("click", () => {
+  cart.classList.toggle("active");
 });

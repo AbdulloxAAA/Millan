@@ -1,86 +1,277 @@
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #1e1e1e;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --accent: #f5a623;
+}
+
 body {
-  background: #0f1724;
-  color: #fff;
-  font-family: sans-serif;
-  text-align: center;
-  padding-top: 50px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg-light);
+  color: var(--text-light);
+  transition: 0.3s;
 }
 
-/* Hamburger button */
-.hamburger {
-  width: 48px;
-  height: 48px;
-  border: none;
-  background: transparent;
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  background: inherit;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo-rasim {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: var(--accent);
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-btn,
+.register-btn {
+  border: 1px solid #aaa;
+  background: none;
+  padding: 5px 10px;
+  border-radius: 5px;
   cursor: pointer;
-  position: relative;
-  z-index: 100;
+  font-size: 14px;
 }
 
-.hamburger__lines {
-  position: relative;
-  width: 28px;
-  height: 18px;
-  margin: 0 auto;
+.register-btn {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  font-weight: bold;
 }
 
-.hamburger__line {
+.dark-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.cart-box {
   position: absolute;
-  width: 100%;
+  right: 0;
+  top: 35px;
+  width: 180px;
+  background: var(--bg-light);
+  color: var(--text-light);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+body.dark .cart-box {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.cart.active .cart-box {
+  display: block;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
   height: 3px;
-  background: white;
+  background: currentColor;
+  transition: 0.3s;
   border-radius: 2px;
-  transition: all 0.3s ease;
 }
 
-.hamburger__line:nth-child(1) {
-  top: 0;
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(7px);
 }
 
-.hamburger__line:nth-child(2) {
-  top: 7px;
-}
-
-.hamburger__line:nth-child(3) {
-  top: 14px;
-}
-
-/* open (active) holati */
-.hamburger.active .hamburger__line:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-
-.hamburger.active .hamburger__line:nth-child(2) {
+.hamburger.active span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.active .hamburger__line:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-7px);
 }
 
-/* Menyu */
-.menu {
-  position: absolute;
-  top: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-  padding: 15px;
-  width: 220px;
-  display: none;
-  flex-direction: column;
-  gap: 10px;
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  .logo-rasim {
+    display: flex;
+    align-items: center;
+  }
+  .nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: inherit;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+  .regist {
+    text-align: center;
+  }
+  .nav.active {
+    max-height: 200px;
+  }
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+  }
+  .hamburger {
+    display: flex;
+  }
+  /* Mobil ekranda login/register tugmalari yashiriladi */
+  .login-btn,
+  .register-btn {
+    display: none;
+  }
 }
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.menu.open {
+.hero {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9b800;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.hero__content {
+  flex: 1;
+  padding: 4rem;
+  color: #fff;
+  max-width: 600px;
+  background-color: #000;
+}
+.hero__content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero__content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+.hero__content .hero__link {
+  color: #f9b800;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+.hero__content .hero__link:hover {
+  border-color: #f9b800;
+}
+.hero__image {
+  flex: 1;
+  height: 349px;
+  text-align: center;
+  background-color: #000;
+  position: relative;
+}
+.hero__image img {
+  width: 200%;
+  position: absolute;
+  height: 200%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: -500px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    background: #fff;
+  }
+  .hero__image {
+    order: -1;
+  }
+  .hero__image img {
+    width: 100%;
+  }
+  .hero__content {
+    color: #000;
+    padding: 2rem;
+  }
+  .hero__content p {
+    color: #444;
+  }
+  .hero__content .hero__link {
+    color: #000;
+    font-weight: 700;
+  }
 }/*# sourceMappingURL=header.css.map */
