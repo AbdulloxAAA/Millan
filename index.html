@@ -15,7 +15,7 @@
         <ul>
           <li><a href="#">Bosh sahifa</a></li>
           <li><a href="#">Biz haqimizda</a></li>
-          <li><a href="#">Kategoriyalar</a></li>
+          <li><a href="./pages/Pro32.html">Категория</a></li>
           <li><a href="#">Aloqa</a></li>
         </ul>
         <div class="registr">
@@ -79,7 +79,8 @@
         placeat, nam aut doloribus tempore voluptatum dolorem aliquam!
         Repellendus, inventore reprehenderit.
       </section>
-      <section class="products-section">
+      <section class="categories products-section">
+        <h2 class="categories__title">Лучшие товары</h2>
         <div class="carousel-container">
           <button class="slide-btn prev" id="prevBtn">←</button>
 
@@ -160,7 +161,235 @@
           <button class="slide-btn next" id="nextBtn">→</button>
         </div>
       </section>
+      <section class="categories">
+        <h2 class="categories__title">Категории</h2>
+
+        <!-- Carousel -->
+        <div class="swiper categoriesSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card">
+              <img src="../images/kategoriya/kate 1.png" alt="Shoes" />
+              <div class="overlay">
+                <p>Женская обувь</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <img src="../images/kategoriya/kate 2.png" alt="Bag" />
+              <div class="overlay">
+                <p>Женские сумки</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <img src="../images/kategoriya/kate 3.png" alt="Hat" />
+              <div class="overlay">
+                <p>Головные уборы</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <img src="../images/kategoriya/kate 4.png" alt="Boots" />
+              <div class="overlay">
+                <p>Ботинки</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination (nuqtachalar) -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="categories products-section">
+        <h2 class="categories__title">Новый товары</h2>
+        <div class="carousel-container">
+          <button class="slide-btn prev" id="prevBtn">←</button>
+
+          <div class="products-wrapper">
+            <div class="products-container" id="products">
+              <div class="product-card">
+                <img src="../images/tovar/tovar 4.png" alt="Tovar 4" />
+                <div class="content">
+                  <h3>Lorem ipsum dolor sit amet</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    sed odio sed nascetur.
+                  </p>
+                  <div class="rating">★★★★☆</div>
+                  <div class="price">640 X.Е.</div>
+                  <button class="add-btn">Добавить в корзину</button>
+                </div>
+              </div>
+              <div class="product-card">
+                <img src="../images/tovar/tovar 1.png" alt="Tovar 1" />
+                <div class="content">
+                  <h3>Lorem ipsum dolor sit amet</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    sed odio sed nascetur.
+                  </p>
+                  <div class="rating">★★★★★</div>
+                  <div class="price">850 X.Е.</div>
+                  <button class="add-btn">Добавить в корзину</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <img src="../images/tovar/tovar 2.png" alt="Tovar 2" />
+                <div class="content">
+                  <h3>Lorem ipsum dolor sit amet</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    sed odio sed nascetur.
+                  </p>
+                  <div class="rating">★★★★☆</div>
+                  <div class="price">920 X.Е.</div>
+                  <button class="add-btn">Добавить в корзину</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <img src="../images/tovar/tovar 3.png" alt="Tovar 3" />
+                <div class="content">
+                  <h3>Lorem ipsum dolor sit amet</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    sed odio sed nascetur.
+                  </p>
+                  <div class="rating">★★★★★</div>
+                  <div class="price">780 X.Е.</div>
+                  <button class="add-btn">Добавить в корзину</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <img src="../images/tovar/tovar 1.png" alt="Tovar 5" />
+                <div class="content">
+                  <h3>Lorem ipsum dolor sit amet</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    sed odio sed nascetur.
+                  </p>
+                  <div class="rating">★★★★★</div>
+                  <div class="price">999 X.Е.</div>
+                  <button class="add-btn">Добавить в корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="slide-btn next" id="nextBtn">→</button>
+        </div>
+      </section>
+      <section class="look-section">
+        <div class="look-image">
+          <img src="../images/footer/imgfotertop.jpg" alt="Look Image" />
+        </div>
+        <div class="look-content">
+          <h2>Создай свой лук на все случаи жизни в “Imperia”</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+            sollicitudin a cursus in. Vel sit donec semper magna dignissim.
+            Amet, mi justo at metus vestibulum sollicitudin lacus. Nunc vel
+            egestas fermentum pellentesque sed vitae vel.
+          </p>
+          <button>НАЧАТЬ ПОКУПКИ</button>
+        </div>
+      </section>
+      <section class="discount-section">
+        <h2>
+          Скидка <span>30%</span> на первую покупку <br />
+          абсолютно для всех
+        </h2>
+      </section>
     </main>
+    <footer class="footer-start">
+      <div class="footer-container">
+        <!-- 1. ПРО IMPERIA -->
+        <div class="footer-column about">
+          <h3>ПРО IMPERIA</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+            pretium aenean dignissim sit cursus dictumst adipiscing nunc.
+          </p>
+          <div class="logo">
+            <img src="../images/header/Logo.png" alt="Imperia Logo" />
+          </div>
+        </div>
+
+        <!-- 2. КОНТАКТЫ -->
+        <div class="footer-column contacts">
+          <h3>КОНТАКТЫ</h3>
+          <p class="phone">+998 90 958 78 87</p>
+          <p class="email">support@bonlou.uz</p>
+
+          <h4 class="work-title">РАБОЧЕЕ ВРЕМЯ</h4>
+          <p>По будням 9:00 — 18:00</p>
+          <p>В выходные 11:00 — 18:00</p>
+        </div>
+
+        <!-- 3. МЕНЮ -->
+        <div class="footer-column menu">
+          <h3>МЕНЮ</h3>
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Категории</a></li>
+            <li><a href="#">Сотрудничество</a></li>
+          </ul>
+        </div>
+
+        <!-- 4. КАТЕГОРИИ -->
+        <div class="footer-column categories">
+          <h3>КАТЕГОРИИ</h3>
+          <ul>
+            <li><a href="#">Женская одежда</a></li>
+            <li><a href="#">Мужская одежда</a></li>
+            <li><a href="#">Детская одежда</a></li>
+            <li><a href="#">Обувь</a></li>
+            <li><a href="#">Сумки</a></li>
+            <li><a href="#">Аксессуары</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Imperia. Все права защищены.</p>
+      </div>
+    </footer>
+    <footer class="footer">
+      <div class="footer__text">
+        <p>
+          High fidelity wireframes include more real content, specific
+          typography choices, and information on image.
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <div>
+          <a href="#">Catalog</a>
+          <a href="#">Popular</a>
+          <a href="#">Pricing</a>
+          <a href="#">Features</a>
+        </div>
+        <div>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Contacts</a>
+        </div>
+      </div>
+
+      <div class="footer__contact">
+        <div class="footer__location">
+          <img src="../images/footer/Iconlo.png" alt="" />
+          <p>Los Angeles,<br />359 Hidden Valley Road</p>
+        </div>
+        <div class="footer__email">
+          <img src="../images/footer/Icon.png" alt="" />
+          <p>Hellohero@gmail.com</p>
+        </div>
+      </div>
+    </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>

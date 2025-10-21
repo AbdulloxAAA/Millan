@@ -252,3 +252,83 @@ body {
     }
   }
 }
+/////aaaaaaaaaaaaaa
+.categories {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f7f8fa;
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .swiper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+  }
+  .swiper-wrapper {
+    display: flex;
+    .wrapper {
+      display: flex;
+    }
+  }
+  .swiper-pagination {
+    margin-top: 15px;
+    position: static;
+  }
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.85);
+    color: #ffb400;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+    p {
+      font-size: 15px;
+    }
+  }
+
+  &:hover .overlay {
+    transform: translateY(0);
+  }
+}
+
+// --- Katta ekranlarda rasmlar to'liq joyni egallaydi ---
+@media (min-width: 768px) {
+  .categories {
+    .swiper-wrapper {
+      display: flex;
+      .wrapper {
+        display: block;
+      }
+    }
+  }
+  .card {
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

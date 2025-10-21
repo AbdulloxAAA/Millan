@@ -88,3 +88,18 @@ prevBtn.addEventListener("click", () => {
 });
 
 window.addEventListener("resize", updateCarousel);
+///////aaaaaaa
+// const swiper = new Swiper(".categoriesSwiper", {
+//   slidesPerView: 1,
+//   spaceBetween: 20,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   breakpoints: {
+//     768: {
+//       slidesPerView: 4,
+//       spaceBetween: 20,
+//     },
+//   },
+// });
