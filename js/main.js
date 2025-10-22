@@ -88,6 +88,28 @@ prevBtn.addEventListener("click", () => {
 });
 
 window.addEventListener("resize", updateCarousel);
+// dropdown.js
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdown = document.querySelector(".dropdown");
+  const toggle = dropdown.querySelector(".dropdown__toggle");
+  const menu = dropdown.querySelector(".dropdown__menu");
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dropdown.classList.toggle("open");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove("open");
+    }
+  });
+
+  // ESC bilan yopish
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") dropdown.classList.remove("open");
+  });
+});
 ///////aaaaaaa
 // const swiper = new Swiper(".categoriesSwiper", {
 //   slidesPerView: 1,

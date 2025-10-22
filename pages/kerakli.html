@@ -8,65 +8,59 @@
     <link rel="stylesheet" href="../sass/main.css" />
   </head>
   <body>
-    <footer class="footer">
-      <div class="footer__text">
-        <p>
-          High fidelity wireframes include more real content, specific
-          typography choices, and information on image.
-        </p>
+    <header class="header">
+      <div class="logo">MILANDI</div>
+      <img class="logo-rasim" src="./images/header/Logo.png" alt="" />
+
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#">Bosh sahifa</a></li>
+          <!-- DROPDOWN -->
+          <li class="dropdown">
+            <button class="dropdown__toggle" id="dropdownBtn">
+              Services <span class="dropdown__icon">▾</span>
+            </button>
+            <ul class="dropdown__menu" id="dropdownMenu">
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">SEO</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Biz haqimizda</a></li>
+          <li><a href="./pages/Pro32.html">Категория</a></li>
+          <li><a href="#">Aloqa</a></li>
+        </ul>
+        <div class="registr">
+          <button class="login-btn">Войти</button>
+          <button class="register-btn">Зарегистрироваться</button>
+        </div>
+      </nav>
+
+      <div class="actions">
+        <button class="dark-btn" id="darkBtn">🌙</button>
+
+        <!-- KORZINA QISMI -->
+        <div class="cart" id="cart">
+          <button class="cart-btn" id="cartBtn">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+          <div class="cart-box" id="cartBox">
+            <h3>Savatcha</h3>
+            <p id="emptyMsg">Hozircha bo‘sh.</p>
+            <div id="cartItems"></div>
+          </div>
+        </div>
       </div>
 
-      <div class="footer__links">
-        <div>
-          <a href="#">Catalog</a>
-          <a href="#">Popular</a>
-          <a href="#">Pricing</a>
-          <a href="#">Features</a>
-        </div>
-        <div>
-          <a href="#">About</a>
-          <a href="#">Blog</a>
-          <a href="#">Contacts</a>
-        </div>
-      </div>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
 
-      <div class="footer__contact">
-        <div class="footer__location">
-          <img src="../images/footer/Iconlo.png" alt="" />
-          <p>Los Angeles,<br />359 Hidden Valley Road</p>
-        </div>
-        <div class="footer__email">
-          <img src="../images/footer/Icon.png" alt="" />
-          <p>Hellohero@gmail.com</p>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      const swiper = new Swiper(".categoriesSwiper", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          480: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 4,
-          },
-        },
-      });
-    </script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
