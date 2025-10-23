@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: white;
   min-height: 100vh;
 
   .look-image {
@@ -18,7 +17,6 @@
   .look-content {
     flex: 1;
     padding: 50px;
-    background: #fff;
     margin-left: 76px;
     h2 {
       font-size: 28px;

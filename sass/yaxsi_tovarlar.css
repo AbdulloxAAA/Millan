@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
+  background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 15px 30px;
   position: sticky;
@@ -82,6 +82,7 @@ body {
 /* PRODUCTS */
 .products-section {
   padding: 30px 10px;
+  background-color: transparent;
 }
 
 .carousel-container {
@@ -89,6 +90,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: transparent;
 }
 .carousel-container .slide-btn {
   background: #333;
@@ -116,17 +118,19 @@ body {
 .products-wrapper {
   overflow: hidden;
   width: 90%;
+  background-color: transparent;
 }
 
 .products-container {
   display: flex;
   transition: transform 0.5s ease-in-out;
   gap: 20px;
+  background-color: transparent;
 }
 
 .product-card {
   flex: 0 0 calc(25% - 20px);
-  background: #fff;
+  background: transparent;
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -232,7 +236,7 @@ body {
 .categories {
   text-align: center;
   padding: 40px 20px;
-  background: #f7f8fa;
+  background: transparent;
 }
 .categories__title {
   font-size: 26px;

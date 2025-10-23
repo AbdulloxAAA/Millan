@@ -5,7 +5,6 @@
 }
 
 .footer-start {
-  background: #fff;
   color: #111;
   border-top: 1px solid #eaeaea;
   padding: 60px 80px;
@@ -20,6 +19,7 @@
   }
   .categories {
     margin-top: -40px;
+    background-color: transparent;
   }
   .footer-column {
     flex: 1 1 220px;

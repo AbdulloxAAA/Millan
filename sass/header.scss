@@ -2,7 +2,7 @@
   --bg-light: #ffffff;
   --bg-dark: #1e1e1e;
   --text-light: #000000;
-  --text-dark: #ffffff;
+  --text-dark: #ffaf02;
   --accent: #f5a623;
 }
 
@@ -27,7 +27,6 @@ body.dark {
   padding: 12px 25px;
   border-bottom: 1px solid #ddd;
   position: relative;
-  background: inherit;
 }
 
 .logo {
@@ -286,6 +285,9 @@ $white: #fff;
     display: flex;
     align-items: center;
     gap: 6px;
+    border: none;
+    font-size: 14px;
+    background-color: white;
   }
 
   &__icon {
@@ -311,7 +313,7 @@ $white: #fff;
     pointer-events: none;
     transform: translateY(-5px);
     transition: all 0.25s ease;
-
+    flex-direction: column;
     li {
       a {
         display: block;
