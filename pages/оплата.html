@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milandi Figma</title>
+    <link rel="stylesheet" href="./sass/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">MILANDI</div>
+      <img class="logo-rasim" src="./images/header/Logo.png" alt="" />
+
+      <nav class="nav" id="nav">
+        <ul>
+          <!-- DROPDOWN -->
+          <li class="dropdown">
+            <button class="dropdown__toggle" id="dropdownBtn">
+              Главная <span class="dropdown__icon">▾</span>
+            </button>
+            <ul class="dropdown__menu" id="dropdownMenu">
+              <li><a href="#">Филтьр</a></li>
+              <li><a href="#">Категория 2</a></li>
+              <li><a href="#">Оформления заказа</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Оформит заказ</a></li>
+            </ul>
+          </li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="./pages/Pro32.html">Категория</a></li>
+          <li><a href="#">Товары</a></li>
+        </ul>
+        <div class="registr">
+          <button class="login-btn">Войти</button>
+          <button class="register-btn">Зарегистрироваться</button>
+        </div>
+      </nav>
+
+      <div class="actions">
+        <button class="dark-btn" id="darkBtn">🌙</button>
+
+        <!-- KORZINA QISMI -->
+        <div class="cart" id="cart">
+          <button class="cart-btn" id="cartBtn">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+          <div class="cart-box" id="cartBox">
+            <h3>Savatcha</h3>
+            <p id="emptyMsg">Hozircha bo‘sh.</p>
+            <div id="cartItems"></div>
+          </div>
+        </div>
+      </div>
+
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
