@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MacBook Pro 21</title>
+    <link rel="stylesheet" href="../sass/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-white text-gray-800 ">
+ <main>
+      <!-- 🔹 О нас -->
+      <section
+        class="max-w-7xl mx-auto px-4 sm:px-8 py-10 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
+      >
+        <div class="flex flex-col justify-center space-y-5 text-center lg:text-left ">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight justify-center">
+            О нас
+          </h2>
+          <p class="text-lg sm:text-base text-black italic">
+            «Потрясающий опыт, мне это нравится много. Спасибо команде!»
+          </p>
+          <p
+            class="text-gray-500 text-xs sm:text-sm leading-relaxed max-w-md mx-auto lg:mx-0"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tempor lorem,
+            in gravida sem. Nullam tincidunt arcu a justo sollicitudin, vitae tincidunt purus
+            faucibus. Aliquam erat volutpat.
+          </p>
+        </div>
+
+        <div class="flex justify-center">
+          <img
+            src="/images/pro21/shop.png"
+            alt="Store image"
+            class="rounded-2xl shadow-xl w-full max-w-xs sm:max-w-sm lg:max-w-md object-cover"
+          />
+        </div>
+      </section>
+
+      <!-- 🔹 Наши преимущества -->
+      <section class="bg-gray-50 py-20 text-center">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-12 tracking-tight">
+          Наши преимущества
+        </h2>
+
+        <!-- ✅ Swiper mobil uchun -->
+        <div class="swiper max-w-6xl mx-auto px-4 md:hidden">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide bg-white rounded-xl shadow-md p-8 flex flex-col items-center space-y-4"
+            >
+              <div class="text-5xl mb-2"><img src="/images/pro21/ic_stars.png" alt="ic_stars"></div>
+              <p class="text-lg font-semibold">Лучший сервис</p>
+              <p class="text-gray-500 text-sm max-w-xs">
+                Мы предлагаем поддержку 24/7, чтобы ваши покупки проходили без проблем.
+              </p>
+            </div>
+            <div
+              class="swiper-slide bg-white rounded-xl shadow-md p-8 flex flex-col items-center space-y-4"
+            >
+              <div class="text-5xl mb-2"><img src="/images/pro21/ic_truck.png" alt="ic_truck"></div>
+              <p class="text-lg font-semibold">Быстрая доставка</p>
+              <p class="text-gray-500 text-sm max-w-xs">
+                Отправляем заказы по всему миру, быстро и надежно.
+              </p>
+            </div>
+            <div
+              class="swiper-slide bg-white rounded-xl shadow-md p-8 flex flex-col items-center space-y-4"
+            >
+              <div class="text-5xl mb-2"><img src="/images/pro21/ic_like.png" alt="ic_like"></div>
+              <p class="text-lg font-semibold">Лучшие цены</p>
+              <p class="text-gray-500 text-sm max-w-xs">
+                Мы подбираем только проверенные бренды по доступным ценам.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination mt-6"></div>
+        </div>
+
+        <!-- ✅ Desktop grid -->
+        <div
+          class="hidden md:grid grid-cols-3 gap-8 max-w-6xl mx-auto px-4"
+        >
+          <div
+            class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center space-y-4"
+          >
+            <div class="text-5xl mb-2"><img src="/images/pro21/ic_stars.png" alt="ic_stars"></div>
+            <p class="text-lg font-semibold">Лучший сервис</p>
+            <p class="text-gray-500 text-sm max-w-xs">
+              Мы предлагаем поддержку 24/7, чтобы ваши покупки проходили без проблем.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center space-y-4"
+          >
+            <div class="text-5xl mb-2"><img src="/images/pro21/ic_truck.png" alt="ic_truck"></div>
+            <p class="text-lg font-semibold">Быстрая доставка</p>
+            <p class="text-gray-500 text-sm max-w-xs">
+              Отправляем заказы по всему миру, быстро и надежно.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center space-y-4"
+          >
+            <div class="text-5xl mb-2"><img src="/images/pro21/ic_like.png" alt="ic_like"></div>
+            <p class="text-lg font-semibold">Лучшие цены</p>
+            <p class="text-gray-500 text-sm max-w-xs">
+              Мы подбираем только проверенные бренды по доступным ценам.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🔹 Приложение -->
+      <section class="bg-gray-900 text-white py-20 px-5 sm:px-10">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center"
+        >
+          <div class="flex justify-center lg:justify-end">
+            <img
+              src="/images/pro21/iPhone 12 Pro mockup 1.png"
+              alt="App preview"
+              class="w-100% sm:w-100% lg:w-100% rounded-xl shadow-lg"
+            />
+          </div>
+
+          <div class="text-center lg:text-left space-y-6">
+            <h2 class="text-3xl lg:text-4xl font-semibold leading-tight">
+              Скачай приложение и получай призы каждый день
+            </h2>
+            <p class="text-gray-300 text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vestibulum sapien
+              eu blandit tempus, felis quam commodo elit.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-2">
+                <a href="https://www.apple.com/app-store/"> <img
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="App Store"
+                class="h-12"
+              /></a>
+             
+             <a href="https://play.google.com/store/games?hl=ru&pli=1"> <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Google Play"
+                class="h-12"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🔹 Работаем по всему миру -->
+      <section class="bg-white py-20 px-5 sm:px-10">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+        >
+          <div class="w-full h-[300px] sm:h-[400px] rounded-2xl overflow-hidden shadow-md">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509377!2d144.95592831531865!3d-37.81720997975161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ5JzAyLjAiUyAxNDTCsDU3JzI3LjMiRQ!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="text-center lg:text-left space-y-6">
+            <h2 class="text-3xl font-semibold">Работаем по всему миру</h2>
+            <div class="grid grid-cols-2 gap-6 text-gray-700 text-sm">
+              <div>
+                <h3 class="font-bold mb-1">Bali</h3>
+                <p>506 Bridle Avenue</p>
+                <p>Newnan, GA 30263</p>
+              </div>
+              <div>
+                <h3 class="font-bold mb-1">London</h3>
+                <p>550 Studio Avenue</p>
+                <p>London, UK 30253</p>
+              </div>
+              <div>
+                <h3 class="font-bold mb-1">Moscow</h3>
+                <p>888 Office Street</p>
+                <p>Moscow, RU 30251</p>
+              </div>
+              <div>
+                <h3 class="font-bold mb-1">Prague</h3>
+                <p>920 Design Plaza</p>
+                <p>Prague, CZ 30253</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+   
+    <script src="../js/main.js"></script>
+  </body>
+</html>

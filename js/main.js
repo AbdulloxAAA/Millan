@@ -103,3 +103,21 @@ window.addEventListener("resize", updateCarousel);
 //     },
 //   },
 // });
+// Swiper ni ishga tushirish
+new Swiper(".swiper", {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    400: { slidesPerView: 1.2 },
+    640: { slidesPerView: 1.5 },
+  },
+  grabCursor: true, // sichqoncha bilan drag ishlaydi
+});
