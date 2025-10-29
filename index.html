@@ -13,10 +13,22 @@
 
       <nav class="nav" id="nav">
         <ul>
-          <li><a href="#">Bosh sahifa</a></li>
-          <li><a href="#">Biz haqimizda</a></li>
+          <!-- DROPDOWN -->
+          <li class="dropdown">
+            <button class="dropdown__toggle" id="dropdownBtn">
+              Главная <span class="dropdown__icon">▾</span>
+            </button>
+            <ul class="dropdown__menu" id="dropdownMenu">
+              <li><a href="#">Филтьр</a></li>
+              <li><a href="#">Категория 2</a></li>
+              <li><a href="#">Оформления заказа</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Оформит заказ</a></li>
+            </ul>
+          </li>
+          <li><a href="#">О нас</a></li>
           <li><a href="./pages/Pro32.html">Категория</a></li>
-          <li><a href="#">Aloqa</a></li>
+          <li><a href="#">Товары</a></li>
         </ul>
         <div class="registr">
           <button class="login-btn">Войти</button>
